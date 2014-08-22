@@ -40,7 +40,7 @@ class func getParsedArray<T: Parsable>(array: [AnyObject]) -> [T] {
     for dictionary in array {
         let dictionary = dictionary as [String: AnyObject]
         let parsedDictionary: T = self.getParsedDictionary(dictionary)
-        parsedArray.append(parsedObject)
+        parsedArray.append(parsedDictionary)
     }
     return parsedArray
 }
